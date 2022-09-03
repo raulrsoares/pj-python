@@ -9,10 +9,7 @@ horas = (input('Quantas horas no dia: '))
 dias = (input('Quantos dias foram? '))
 
 # Converter horas
-conver = float(horas) * 60
-horasTotais = int(conver) * int(dias)
+conver = float(horas) * int(dias)
+horasTotais = int(conver) * 60
 
-# Quantidade de Horas
-horaGerais = int(horasTotais) / 60 
-
-print(f'Você tem {horasTotais} minutos, ou seja {horaGerais} horas!')
+print(f'Você tem {horasTotais} minutos, ou seja {conver} horas!')
