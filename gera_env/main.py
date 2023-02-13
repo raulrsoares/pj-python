@@ -17,8 +17,7 @@ def separarJson():
     criarTfvars(outputsTF)
     os.system('terraform fmt --recursive')
     # os.system(f'cp {globalModel}.tfvars teste.tfvars')
-    os.system(
-        f'echo -e $(cat {globalModel}.tfvars) >> $(pwd)/../front/terraform.tfvars')
+    os.system(f'echo -e $(cat {globalModel}.tfvars) >> $(pwd)/../front/terraform.tfvars')
     os.system('cat $(find $(pwd)/../front -name "*.tfvars")')
 
 
